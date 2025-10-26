@@ -5,7 +5,7 @@ const calculateAreaButton = document.getElementById('calculateArea');
 const calculateLenghtButton = document.getElementById('calculateLenght');
 
 class Circle {
-  constructor (radius) {
+  constructor(radius) {
     this.radius = radius;
     console.log(radius);
   }
@@ -33,30 +33,30 @@ class Circle {
   }
 }
 
-const Circle1 = new Circle (5);
+const Circle1 = new Circle(5);
 
-showRadiusButton.onclick = function() {
+showRadiusButton.onclick = function () {
   alert('Current circle radius is: ' + Circle1.currentRadius);
 };
 
-changeRadiusButton.onclick = function() {
+changeRadiusButton.onclick = function () {
   const newRadius = prompt('Enter new circle radius:');
-  if(!newRadius || isNaN(newRadius) || Number(newRadius) <= 0) {
+  if (!newRadius || isNaN(newRadius) || Number(newRadius) <= 0) {
     alert('Error - enter correct positive number.')
   } else {
-  Circle1.currentRadius = newRadius;
+    Circle1.currentRadius = newRadius;
   }
 };
 
-showDiameterButton.onclick = function() {
+showDiameterButton.onclick = function () {
   alert('Current circle diameter is: ' + Circle1.currentDiameter);
 };
 
-calculateAreaButton.onclick = function() {
+calculateAreaButton.onclick = function () {
   alert('Current circle area is: ' + Circle1.calcArea().toFixed(2));
 };
 
-calculateLenghtButton.onclick = function() {
+calculateLenghtButton.onclick = function () {
   alert('Current circle lenght is: ' + Circle1.calcLenght().toFixed(2));
 };
 

@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="scripts/script.js" defer></script>
+  <script src="scripts/circle.js" defer></script>
+  <script src="scripts/employee.js" defer></script>
   <title>Document</title>
 </head>
 
@@ -13,11 +14,24 @@
   <h1> JavaScript Classes Training - 1</h1>
 
   <div class="circle">
+    <h2> Circle task</h2>
     <button id="showRadius">Show Radius</button>
     <button id="changeRadius">Change Radius</button>
     <button id="showDiameter">Show Diameter</button>
     <button id="calculateArea">Calculate Area</button>
     <button id="calculateLenght">Calculate Lenght</button>
+  </div>
+
+  <div class="employee-main">
+    <h2> Employers table task</h2>
+    <button id="generateTable">Generate table</button> <br>
+
+    <input type="text" id="employersName" placeholder="Name">
+    <input type="text" id="employersSalary" placeholder="Salary">
+    <input type="text" id="employersPosition" placeholder="Position">
+    <button id="addEmployer">Add Employer</button> <br>
+
+    <div id="employee"></div>
   </div>
 
 </body>
